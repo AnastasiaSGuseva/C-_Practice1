@@ -3,24 +3,11 @@
 
 Console.WriteLine ("Введите число: ");
 int N = Convert.ToInt32(Console.ReadLine ());
+int M = 2;
 
-if (N % 2 == 1)
+while (M <= N)
 {
-    N = N - 1;
-    while (N >= 2)
-{
-    Console.Write (N);
+    Console.Write (M);
     Console.Write (" ");
-    N = N - 2;
-}
-}
-
-else
-{
-while (N > 2)
-{
-    N = N - 2;
-    Console.Write (N);
-    Console.Write (" ");
-}
+    M = M + 2;
 }
